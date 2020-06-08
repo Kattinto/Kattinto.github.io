@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/pages/products.html">Product</a>
+        </li>
+        <li>
+            <a href="/pages/orders.html">Orders</a>
+        </li>
+        <li>
+            <a href="/about.html">About</a>
+        </li>
+    </ul>
+    <h1>About</h1>
+    <!--A HTML táblát a <table> címke határozza meg.-->
+    <table>
+        <!--caption: a tábla felirata, címe-->
+        <caption>Opening hour</caption>
+        <!--oszlopok fejlécei-->
+        <thead>
+            <tr>
+                <!--header:oszlop fejléce középre igazítva bold vastagított-->
+                <th>Day</th>
+                <th>Open</th>
+                <th>Close</th>
+            </tr>
+            <!--thead az oszlopok fejlécei-->
+        </thead>
+        <!--tbody a táblázat testrésze ahol az adatok vannak-->
+        <tbody>
+            <!--(Table row) a sorokat a <tr> címke határozza meg.-->
+            <tr>
+                <!--(Table data) a cellák adatait a <td> címke határozza meg-->
+                <td>Monday-Friday</td>
+                <td>09:00</td>
+                <td rowspan="2"> 21:00</td>
+                
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>10:00</td>
+                
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td colspan="2">Closed</td>
+                
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <!--oszlopszélesség-->
+                <td colspan="3">
+                    &copy; 2020
+                </td>
+            </tr>
+        </tfoot>
+
+
+    </table>
+</body>
+
+</html>
